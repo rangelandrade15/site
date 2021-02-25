@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=fjalla+One&display=swap" rel="stylesheet">
+    <title>Meu Site</title>
+    
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin: 100;
+        font-family: 'fjalla One', sans-serif;
+    }
+    footer {
+        background-color: black;
+        padding: 30px;
+        color: white;
+    }
+#menu {
+    display: flex;
+    background-color: #302f2f;
+    margin: 0;
+}
+#menu li {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+#menu li:first-child {
+    margin-right: auto;
+}
+.section1 {
+    display: flex;
+    height: 50vh;
+    background-color: #22d271;
+}
+.centralize {
+    margin: auto;
+    text-align: center;
+}
+.section2 {
+    display: flex;
+    background-color: white;
+    width: 100vw;
+}
+.imagemprojeto {
+    width: 15vw;
+    height: 15vw;
+    padding-left: 0px;
+}
+.section3 {
+    display: flex;
+    background-color: #e5e6ea;
+    width: 100vw;
+}
+.botaovermelho {
+    background-color: #c64e63;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 'fjalla One', sans-serif;
+}
+</style>
+<body >
+    
+    <nav>
+        <ul id="menu">
+            <li><img src="img/Rangel.png"></li>
+            <li><a href="#Sobre"><button>Sobre</button></a></li>
+            <li><a href="#projetos"><button>Projetos</button></a></li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+    <div class="section1">
+        <div class="centralize">
+            <h1 style="color: white;">Rangel Andrade</h1>
+           <a href="#projetos"><button class="botaovermelho">Meus Projetos</button></a>
+
+        </div>
+    </div>
+    <div id="Sobre">
+        <h1>Sobre</h1>
+        <p>Sou estudande de Licenciatura em Computação e Informática pelo Instituto Federal da Paraiba (IFPB), tenho o desejo de entrar na área de Tecnologia, voltado as práticas técnicas.</p>
+        <p>Sou apaixonado pela área de Tecnologia, espero ter uma oportunidade na área para poder realizar meu sonho.</p>
+    </div><br><br><br><br>
+    <div id="projetos" class="section2 centralize">
+        <table class="centralize">
+            <tr>
+                <td style="width:40%" ><img class="imagemprojeto" src="img/calculadora.jpg"></td>
+                <td style="width:60%;text-align: left">
+                    <ul style="color: black;">
+                Calculadora em html
+                <hr>
+                <li>Esse projeto eu desenvolvi para a disciplina de programação Web I, para desenvolver utilizei</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul></td>
+            </tr>
+        </table>
+    </div>
+    <div id="projetos" class="section3 centralize">
+        <table class="centralize">
+            <tr>
+               
+                <td style="width:60%;text-align: left">
+                    <ul style="color: black;">
+                Biblioteca Virtual
+                <hr>
+                <li>Esse projeto eu desenvolvi para a disciplina de programação web II, para desenvolver utilizei</li>
+                <li>node js</li>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ul></td>
+            <td style="width:40%" ><img class="imagemprojeto" src="img/biblioteca.png"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="projetos" class="section2 centralize">
+        <table class="centralize">
+            <tr>
+                <td style="width:40%" ><img class="imagemprojeto" src="img/paises.jpg"></td>
+                <td style="width:60%;text-align: left">
+                    <ul style="color: black;">
+                Cadastrar Paises
+                <hr>
+                <li>Esse projeto eu desenvolvi para a disciplina de programação web II, para desenvolver utilizei</li>
+                <li>node js</li>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ul></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <h5 class="centralize">@Criado por Rangel Andrade</h5>
+    </footer>
+</body>
+</html>
