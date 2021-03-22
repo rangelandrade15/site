@@ -14,7 +14,7 @@
     }
     body {
         margin: 100;
-        font-family: 'fjalla One', sans-serif;
+        font-family: 'fjalla One', sans-serif;        
     }
     footer {
         background-color: black;
@@ -25,6 +25,7 @@
     display: flex;
     background-color: #302f2f;
     margin: 0;
+    background-image: url(img/fundo.jpg);
 }
 #menu li {
     color: white;
@@ -35,11 +36,18 @@
 #menu li:first-child {
     margin-right: auto;
 }
+.redonda {
+    border-radius: 50%;
+    width: 200px;
+}
+.perfil {
+    background-color: #e5e6ea;
+}
 .section1 {
     display: flex;
-    height: 50vh;
-    background-color: #22d271;
-}
+    height: 20vh;
+    background-color: blue;
+    }
 .centralize {
     margin: auto;
     text-align: center;
@@ -48,6 +56,7 @@
     display: flex;
     background-color: white;
     width: 100vw;
+    background-image: url(img/fundo2.jfif);
 }
 .imagemprojeto {
     width: 15vw;
@@ -58,6 +67,7 @@
     display: flex;
     background-color: #e5e6ea;
     width: 100vw;
+    background-image: url(img/fundo2.jfif);
 }
 .botaovermelho {
     background-color: #c64e63;
@@ -66,15 +76,20 @@
     padding: 10px;
     font-size: 'fjalla One', sans-serif;
 }
+.contatos {
+    color: black;
+    background-color:#e5e6ea;
+}
 </style>
 <body >
     
     <nav>
         <ul id="menu">
-            <li><img src="img/Rangel.png"></li>
-            <li><a href="#Sobre"><button>Sobre</button></a></li>
+            <li><img src="img/rangel1.jpg" class="redonda"></li>
+            <li><a href="#Perfil"><button>Perfil</button></a></li>
+            <li><a href="#Habilidades"><button>Habilidades</button></a></li>
             <li><a href="#projetos"><button>Projetos</button></a></li>
-            <li>Contato</li>
+            <li><a href="#Contatos"><button>Contatos</button></a></li>
         </ul>
     </nav>
     <div class="section1">
@@ -84,22 +99,36 @@
 
         </div>
     </div>
-    <div id="Sobre">
-        <h1>Sobre</h1>
-        <p>Sou estudande de Licenciatura em Computação e Informática pelo Instituto Federal da Paraiba (IFPB), tenho o desejo de entrar na área de Tecnologia, voltado as práticas técnicas.</p>
-        <p>Sou apaixonado pela área de Tecnologia, espero ter uma oportunidade na área para poder realizar meu sonho.</p>
-    </div><br><br><br><br>
+    <div id="Perfil" class="perfil">
+        <h1>Perfil</h1>
+        <h3>Sou estudande de Licenciatura em Computação e Informática pelo Instituto Federal da Paraiba (IFPB), tenho o desejo de entrar na área de Tecnologia, voltado as práticas técnicas.<br>
+        Sou apaixonado pela área de Tecnologia, espero ter uma oportunidade na área para poder realizar meu sonho.</h3>
+    </div><br><br>
+    <div id="Habilidades" class="habilidades">
+        <h1>Habilidades</h1>
+        <ul>
+            <li><b> Html</b> - Intermediario</li>
+            <li><b> Css</b> - Intermediario</li>
+            <li><b> Javascript</b> - Intermediario</li>
+            <li><b>Word</b> - Intermediario</li>
+            <li><b>Excel</b> - Intermediario</li>
+        </ul>
+    </div>
+    <center>
+        <h1>Meus Projetos</h1>
+    </center><br><br>
     <div id="projetos" class="section2 centralize">
         <table class="centralize">
+            
             <tr>
                 <td style="width:40%" ><img class="imagemprojeto" src="img/calculadora.jpg"></td>
                 <td style="width:60%;text-align: left">
-                    <ul style="color: black;">
-                Calculadora em html
+                    <ul style="color: white;">
+               <h1> Calculadora em html</h1>
                 <hr>
-                <li>Esse projeto eu desenvolvi para a disciplina de programação Web I, para desenvolver utilizei</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li><h2> projeto eu desenvolvi para a disciplina de programação Web I, para desenvolver utilizei</h2></li>
+                <li><h2>HTML</h2></li>
+                <li><h2>CSS</h2></li>
             </ul></td>
             </tr>
         </table>
@@ -110,13 +139,13 @@
                
                 <td style="width:60%;text-align: left">
                     <ul style="color: black;">
-                Biblioteca Virtual
+               <h1> Biblioteca Virtual</h1>
                 <hr>
-                <li>Esse projeto eu desenvolvi para a disciplina de programação web II, para desenvolver utilizei</li>
-                <li>node js</li>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
+                <li><h2>Esse projeto eu desenvolvi para a disciplina de programação web II, para desenvolver utilizei</h2></li>
+                <li><h2> node js</h2></li>
+                <li><h2> html</h2></li>
+                <li><h2> css</h2></li>
+                <li><h2> javascript</h2></li>
             </ul></td>
             <td style="width:40%" ><img class="imagemprojeto" src="img/biblioteca.png"></td>
             </tr>
@@ -127,18 +156,25 @@
             <tr>
                 <td style="width:40%" ><img class="imagemprojeto" src="img/paises.jpg"></td>
                 <td style="width:60%;text-align: left">
-                    <ul style="color: black;">
-                Cadastrar Paises
+                    <ul style="color: white;">
+               <h1> Cadastrar Paises</h1>
                 <hr>
-                <li>Esse projeto eu desenvolvi para a disciplina de programação web II, para desenvolver utilizei</li>
-                <li>node js</li>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
+                <li><h2> Esse projeto eu desenvolvi para a disciplina de programação web II, para desenvolver utilizei</h2></li>
+                <li><h2> node js</h2></li>
+                <li><h2> html</h2></li>
+                <li><h2> css</h2></li>
+                <li><h2> javascript</h2></li>
             </ul></td>
             </tr>
         </table>
     </div>
+    <div id="Contatos" class="contatos">
+        <h1>Contatos</h1>
+        <p><b> Telefone: (83)99126-7263</b></p>
+        <p><b> Github:<a href="https://github.com/rangelandrade15"> https://github.com/rangelandrade15</a></b></p>
+        <p><b> Linkedin:<a href="https://www.linkedin.com/in/rangel-andrade-de-oliveira-bb72051b0"> https://www.linkedin.com/in/rangel-andrade-de-oliveira-bb72051b0</a></b></p>
+        <p><b> Email: rangel-andrade@hotmail.com</b></p>
+    </div><br><br><br><br>
     <footer>
         <h5 class="centralize">@Criado por Rangel Andrade</h5>
     </footer>
